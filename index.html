@@ -26,6 +26,28 @@
             padding: 40px 20px;
         }
 
+        .header-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .profile-photo {
+            flex-shrink: 0;
+        }
+
+        .profile-photo img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .header-text {
+            flex-grow: 1;
+        }
+
         h1 {
             font-size: 2.5em;
             font-weight: 600;
@@ -37,14 +59,6 @@
             font-size: 1.2em;
             color: #666;
             margin-bottom: 40px;
-        }
-
-        h2 {
-            font-size: 1.5em;
-            font-weight: 600;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: #1a1a1a;
         }
 
         p {
@@ -62,26 +76,6 @@
         a:hover {
             color: #004499;
             text-decoration: underline;
-        }
-
-        .section {
-            margin-bottom: 2em;
-        }
-
-        ul {
-            list-style-position: outside;
-            margin-left: 20px;
-            margin-bottom: 1.5em;
-        }
-
-        li {
-            margin-bottom: 0.5em;
-            font-size: 1.05em;
-            color: #444;
-        }
-
-        .education-item {
-            margin-bottom: 1em;
         }
 
         .contact-links {
@@ -112,6 +106,16 @@
                 padding: 20px 15px;
             }
 
+            .header-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo img {
+                width: 150px;
+                height: 150px;
+            }
+
             .contact-links a {
                 display: inline-block;
                 margin: 5px 8px;
@@ -121,52 +125,37 @@
 </head>
 <body>
     <div class="container">
-        <h1>Madeline Dunne</h1>
-        <p class="subtitle">PhD Student at Boston University<br><a href="https://www.bu.edu/cbr/">Center for Brain Recovery</a></p>
+        <div class="header-section">
+            <div class="profile-photo">
+                <img src="photo.jpg" alt="Madeline Dunne">
+            </div>
+            <div class="header-text">
+                <h1>Madeline Dunne</h1>
+                <p class="subtitle">PhD Student at Boston University<br><a href="https://www.bu.edu/cbr/">Center for Brain Recovery</a></p>
+            </div>
+        </div>
         
-        <div class="section">
-            <h2>About</h2>
-            <p>
-                I am a PhD student and an ASHA-certified speech-language pathologist in the <a href="https://www.bu.edu/sargent/academics/departments-programs/speech-language-hearing-sciences/phd-in-slhs/">Speech, Language, and Hearing Sciences</a> program at Boston University. I work in the <a href="https://www.bu.edu/cbr/">Center for Brain Recovery</a>, where my research interests center on advancing naturalistic and functional treatment approaches for aphasia, with a particular interest in conversation-based and group interventions.
-            </p>
-            <p>
-                Currently, I am working on a <a href="https://www.pcori.org/">Patient-Centered Outcomes Research Institute (PCORI)</a> Eugene Washington Engagement Award project with the <a href="https://aphasia.org/">National Aphasia Association (NAA)</a>. This project, titled <a href="https://aphasia.org/core-impact/">"Building capacity for patient-centered CER in stroke-related aphasia,"</a> aims to establish a clear set of research priorities based on the experiences and needs of people living with aphasia, ensuring that patient voices are at the center of research that affects their lives.
-            </p>
-            <p>
-                I am dedicated to understanding how aphasia impacts social participation and everyday functioning, and I aim to investigate outcomes that extend beyond core language impairment, including behavioral and neural markers of recovery. Informed by my clinical experience, I hope to support the translation of research into meaningful, evidence-based interventions that improve quality of life for individuals with aphasia and their families.
-            </p>
-        </div>
+        <p>
+            I am a PhD student and an ASHA-certified speech-language pathologist in the <a href="https://www.bu.edu/sargent/academics/departments-programs/speech-language-hearing-sciences/phd-in-slhs/">Speech, Language, and Hearing Sciences</a> program at Boston University. I work with Dr. <a href="https://www.bu.edu/sargent/profile/swathi-kiran-ph-d-ccc-slp/">Swathi Kiran</a> in the <a href="https://www.bu.edu/cbr/">Center for Brain Recovery</a>, where my research interests center on advancing naturalistic and functional treatment approaches for aphasia, with a particular interest in conversation-based and group interventions.
+        </p>
 
-        <div class="section">
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Functional treatment for aphasia</li>
-                <li>Social participation and quality of life outcomes for aphasia</li>
-                <li>Behavioral and neural mechanisms of treatment-induced recovery</li>
-                <li>Translational clinical research</li>
-            </ul>
-        </div>
+        <p>
+            Currently, I am working on a <a href="https://www.pcori.org/">Patient-Centered Outcomes Research Institute (PCORI)</a> Eugene Washington Engagement Award project with the <a href="https://aphasia.org/">National Aphasia Association (NAA)</a>. This project, titled <a href="https://aphasia.org/core-impact/">"Building capacity for patient-centered CER in stroke-related aphasia,"</a> aims to establish a clear set of research priorities based on the experiences and needs of people living with aphasia, ensuring that patient voices are at the center of research that affects their lives.
+        </p>
 
-        <div class="section">
-            <h2>Education</h2>
-            <div class="education-item">
-                <strong>Ph.D. Speech, Language, and Hearing Sciences</strong><br>
-                Boston University (In Progress)
-            </div>
-            <div class="education-item">
-                <strong>M.S. Speech-Language Pathology</strong><br>
-                Boston University (2022)
-            </div>
-            <div class="education-item">
-                <strong>B.A. Speech, Language, and Hearing Sciences</strong><br>
-                Minors: Cognitive Neuroscience & Theater; ASL Certificate<br>
-                Temple University (2020)
-            </div>
-        </div>
+        <p>
+            Broadly, my research focuses on understanding how aphasia impacts social participation and everyday functioning, investigating outcomes that extend beyond core language impairment, including behavioral and neural markers of recovery. Informed by my clinical experience, I hope to support the translation of research into meaningful, evidence-based interventions that improve quality of life for individuals with aphasia and their families. My work spans behavioral, physiological, and neuroimaging measures, as well as patient-centered approaches to research.
+        </p>
 
-        <div class="section">
-            <p><strong>Let's connect!</strong></p>
-        </div>
+        <p>
+            Before my doctoral training, I was a speech-language pathologist in acute care, LTAC, and outpatient settings. I earned my M.S. in Speech-Language Pathology from <a href="https://www.bu.edu/sargent/">Boston University</a> and my B.A. in Speech, Language, and Hearing Sciences (with minors in Cognitive Neuroscience and Theater, and an ASL Certificate) from <a href="https://liberalarts.temple.edu/academics/departments-and-programs/communication-sciences-and-disorders">Temple University</a>.
+        </p>
+
+        <p>
+            When I'm not working, I enjoy performing arts, crocheting, baking, <a href="https://www.goodreads.com/user/show/26688137-maddy-dunne" target="_blank">reading</a>, and game nights with friends and family.
+        </p>
+
+        <p><strong>Let's connect!</strong></p>
 
         <div class="contact-links">
             <a href="mailto:dunnem@bu.edu">Email</a>
