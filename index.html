@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Madeline Dunne - PhD Student</title>
+    <meta name="description" content="Madeline Dunne - PhD Student at Boston University researching aphasia treatment and social participation">
     <style>
         * {
             margin: 0;
@@ -28,7 +29,21 @@
         h1 {
             font-size: 2.5em;
             font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
             margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 20px;
             color: #1a1a1a;
         }
 
@@ -53,20 +68,39 @@
             margin-bottom: 2em;
         }
 
-        .footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            text-align: center;
+        ul {
+            list-style-position: outside;
+            margin-left: 20px;
+            margin-bottom: 1.5em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+            font-size: 1.05em;
+            color: #444;
+        }
+
+        .education-item {
+            margin-bottom: 1em;
         }
 
         .contact-links {
             margin-top: 30px;
+            margin-bottom: 30px;
         }
 
         .contact-links a {
             margin: 0 10px;
             font-weight: 500;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
         }
 
         @media (max-width: 768px) {
@@ -77,56 +111,57 @@
             .container {
                 padding: 20px 15px;
             }
+
+            .contact-links a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Your Name</h1>
+        <h1>Madeline Dunne</h1>
+        <p class="subtitle">PhD Student at Boston University<br><a href="https://www.bu.edu/cbr/">Center for Brain Recovery</a></p>
         
         <div class="section">
+            <h2>About</h2>
             <p>
-                I am a [Your Position] in the <a href="#">[Your Department]</a> at [Your Institution], 
-                working with Dr. <a href="#">[Advisor Name]</a> in the <a href="#">[Lab Name]</a>. 
-                My current work focuses on [brief description of your current research or work].
+                I am a PhD student and an ASHA-certified speech-language pathologist in the <a href="https://www.bu.edu/sargent/academics/departments-programs/speech-language-hearing-sciences/phd-in-slhs/">Speech, Language, and Hearing Sciences</a> program at Boston University. I work in the <a href="https://www.bu.edu/cbr/">Center for Brain Recovery</a>, where my research interests center on advancing naturalistic and functional treatment approaches for aphasia, with a particular interest in conversation-based and group interventions.
+            </p>
+            <p>
+                Currently, I am working on a <a href="https://www.pcori.org/">Patient-Centered Outcomes Research Institute (PCORI)</a> Eugene Washington Engagement Award project with the <a href="https://aphasia.org/">National Aphasia Association (NAA)</a>. This project, titled <a href="https://aphasia.org/core-impact/">"Building capacity for patient-centered CER in stroke-related aphasia,"</a> aims to establish a clear set of research priorities based on the experiences and needs of people living with aphasia, ensuring that patient voices are at the center of research that affects their lives.
+            </p>
+            <p>
+                I am dedicated to understanding how aphasia impacts social participation and everyday functioning, and I aim to investigate outcomes that extend beyond core language impairment, including behavioral and neural markers of recovery. Informed by my clinical experience, I hope to support the translation of research into meaningful, evidence-based interventions that improve quality of life for individuals with aphasia and their families.
             </p>
         </div>
 
         <div class="section">
-            <p>
-                I recently completed my [Degree] in <a href="#">[Field of Study]</a> at [University], 
-                where I worked with Dr. <a href="#">[Advisor Name]</a> in the <a href="#">[Lab/Center Name]</a>. 
-                [Add any additional collaboration or affiliation information here.]
-            </p>
+            <h2>Research Interests</h2>
+            <ul>
+                <li>Functional treatment for aphasia</li>
+                <li>Social participation and quality of life outcomes for aphasia</li>
+                <li>Behavioral and neural mechanisms of treatment-induced recovery</li>
+                <li>Translational clinical research</li>
+            </ul>
         </div>
 
         <div class="section">
-            <p>
-                Broadly, my research focuses on [main research area]. My dissertation/thesis work 
-                involved [brief description of your major project]. This work [impact or findings]. 
-                [Add any additional research interests or methodological approaches here.]
-            </p>
-        </div>
-
-        <div class="section">
-            <p>
-                Methodologically, my work spans [list your methodological approaches, techniques, 
-                or tools you commonly use in your research or work].
-            </p>
-        </div>
-
-        <div class="section">
-            <p>
-                Before my [current position], I was a [previous position] at <a href="#">[Previous Institution]</a>. 
-                I earned my [Degree] in [Field] from <a href="#">[University]</a> and my [Degree] 
-                in [Field] from <a href="#">[University]</a>.
-            </p>
-        </div>
-
-        <div class="section">
-            <p>
-                When I'm not working, I'm [list your hobbies, interests, or activities].
-            </p>
+            <h2>Education</h2>
+            <div class="education-item">
+                <strong>Ph.D. Speech, Language, and Hearing Sciences</strong><br>
+                Boston University (In Progress)
+            </div>
+            <div class="education-item">
+                <strong>M.S. Speech-Language Pathology</strong><br>
+                Boston University (2022)
+            </div>
+            <div class="education-item">
+                <strong>B.A. Speech, Language, and Hearing Sciences</strong><br>
+                Minors: Cognitive Neuroscience & Theater; ASL Certificate<br>
+                Temple University (2020)
+            </div>
         </div>
 
         <div class="section">
@@ -134,15 +169,16 @@
         </div>
 
         <div class="contact-links">
-            <a href="mailto:your.email@example.com">Email</a>
-            <a href="https://twitter.com/yourhandle" target="_blank">Twitter</a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=yourID" target="_blank">Google Scholar</a>
-            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="mailto:your.email@bu.edu">Email</a>
+            <a href="https://www.bu.edu/cbr/profile/madeline-dunne/" target="_blank">Lab Profile</a>
+            <a href="https://scholar.google.com/citations?hl=en&user=vquUcS0AAAAJ" target="_blank">Google Scholar</a>
+            <a href="https://www.researchgate.net/profile/Madeline-Dunne" target="_blank">ResearchGate</a>
+            <a href="https://orcid.org/0000-0003-1140-6340" target="_blank">ORCID</a>
+            <a href="https://bsky.app/profile/madelinedunne.bsky.social" target="_blank">Bluesky</a>
         </div>
 
         <div class="footer">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 Madeline Dunne</p>
         </div>
     </div>
 </body>
